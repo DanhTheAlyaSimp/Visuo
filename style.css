@@ -24,7 +24,6 @@ small {font-size: 0.750rem; /* 12px */}
     flex-direction: column;
     text-align: center;
     margin-top: 4rem;
-    margin-bottom: 4rem;
 }
 
 #title h1{
@@ -42,12 +41,28 @@ small {font-size: 0.750rem; /* 12px */}
 
 #form{
     display: flex;
-    gap:1rem;
-    align-items: center;
-    width: 75%;
+    flex-direction: column;
+    margin: 2rem;
     justify-self: center;
+    width: 75%;
 }
+
 #form input{
-    height: 2rem;
     width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+}
+#form p{
+    font-size: 24px;
+    font-weight: 0 ;
+}
+
+#visualize{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#visualize p{
+    font-size: 1.333rem;
 }

@@ -3,16 +3,15 @@ document.getElementById("form").addEventListener("submit",function(e){
 
     const form = e.target;
     const hours = form.hours.value;
-
+    const label = document.getElementById("status")
     if(!isNaN(hours) && hours.trim() !==""){
-        alert("Good")
-        alert(`Bro is bragging about working ${hours} hours a day`)
+        label.textContent = `Here is what you can achieve with your ${hours} hours per day productivity!`
     }
     else if(typeof hours === "string"){
-        alert("U can't even type a number? Can't be useful!")
+        label.textContent = "U can't even type a number? Can't be useful!"
     }
     else{
-        alert("What is even that data type...")
+        label.textContent = "What is even that data type..."
     }
 
     
