@@ -17,7 +17,7 @@
         </section>
         <section>
             <div id="inputField">
-                <form action="/submit" method="get" id="form">
+                <form action="submit" method="get" id="form">
                     <p>How many hours did u spent doing productive stuff?</p>
                     <input type="text" id="input" name="hours" placeholder="Type stuff in...">
                 </form>
@@ -25,7 +25,24 @@
             <div id="visualize">
                 <p id="status">Awaiting user input...</p>
                 <div id="progressBars">
-                    
+                    <div class="progress">
+                        <p>Live for 1 hour</p>
+                        <div class="bar">
+                            <div class="progressDiv" id="progress-div-1"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <p>Live for a day</p>
+                        <div class="bar">
+                            <div class="progressDiv" id="progress-div-2"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <p>Live for a year</p>
+                        <div class="bar">
+                            <div class="progressDiv" id="progress-div-3"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

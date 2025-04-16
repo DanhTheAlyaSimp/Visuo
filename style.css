@@ -66,3 +66,32 @@ small {font-size: 0.750rem; /* 12px */}
 #visualize p{
     font-size: 1.333rem;
 }
+
+#progressBars{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 75%;
+}
+.progress{
+    display: flex;
+    flex-direction: row;
+}
+.progress p{
+    width: 50%;
+}
+
+.progress .bar{
+    width: 50%;
+    justify-self: flex-end;
+    height: 1rem;
+    align-self: center;
+    border:solid black 1px;
+    border-radius: 5px;
+}
+
+.bar .progressDiv{
+    width: 0%; 
+    background-color: black;
+    height: 100%;
+}
