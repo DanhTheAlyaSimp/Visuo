@@ -86,13 +86,14 @@ small {font-size: 0.750rem; /* 12px */}
     justify-self: flex-end;
     height: 1rem;
     align-self: center;
-    border:solid black 1px;
+    background-color: rgb(216, 216, 216);
     border-radius: 5px;
 }
 
 .bar .progressDiv{
     width: 0%; 
     transition: width 0.6s ease-in-out;
-    background-color: black;
+    background-color: rgb(46, 134, 28);
     height: 100%;
+    border-radius: inherit;
 }
