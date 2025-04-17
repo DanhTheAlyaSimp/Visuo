@@ -16,12 +16,10 @@ document.getElementById("form").addEventListener("submit",function(e){
     e.preventDefault()
 
     resetProgressBars()
-    alert("Bar reset!")
 
     const form = e.target;
     const hours = form.hours.value;
     const label = document.getElementById("status")
-    alert("Form result got! Value: "+hours)
     if(!isNaN(hours) && hours.trim() !==""){
         label.textContent = `Here is what you can achieve with your ${hours} hours per day productivity!`
         updateProgressBars(parseFloat(hours))
